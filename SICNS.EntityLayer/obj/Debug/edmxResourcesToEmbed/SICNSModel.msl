@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SICDBWEBNSModelStoreContainer" CdmEntityContainer="SICDBWEBNSEntities">
+    <EntitySetMapping Name="SICNS_T_ASISTENCIA">
+      <EntityTypeMapping TypeName="SICDBWEBNSModel.SICNS_T_ASISTENCIA">
+        <MappingFragment StoreEntitySet="SICNS_T_ASISTENCIA">
+          <ScalarProperty Name="colab_c_iid" ColumnName="colab_c_iid" />
+          <ScalarProperty Name="asis_c_dfec_ingreso" ColumnName="asis_c_dfec_ingreso" />
+          <ScalarProperty Name="asis_c_dfec_salida" ColumnName="asis_c_dfec_salida" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SICNS_T_CONTACTO">
+      <EntityTypeMapping TypeName="SICDBWEBNSModel.SICNS_T_CONTACTO">
+        <MappingFragment StoreEntitySet="SICNS_T_CONTACTO">
+          <ScalarProperty Name="contac_c_vcorreo" ColumnName="contac_c_vcorreo" />
+          <ScalarProperty Name="contac_c_vape_mater" ColumnName="contac_c_vape_mater" />
+          <ScalarProperty Name="contac_c_vape_pater" ColumnName="contac_c_vape_pater" />
+          <ScalarProperty Name="contac_c_vnombres" ColumnName="contac_c_vnombres" />
+          <ScalarProperty Name="contac_c_iid" ColumnName="contac_c_iid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\ns_wsrestfull" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Perfil1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Global.asax" publishTime="12/04/2013 23:43:07" />
+    <file relUrl="bin/NS_RESTFull.pdb" publishTime="12/05/2013 08:31:44" />
+    <file relUrl="bin/NS_RESTFull.dll" publishTime="12/05/2013 08:31:45" />
+    <file relUrl="Web.config" publishTime="12/05/2013 08:31:51" />
+  </publishProfile>
+</publishData>

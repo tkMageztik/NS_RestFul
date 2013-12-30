@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="NS_RESTFull.Global" Language="C#" %>

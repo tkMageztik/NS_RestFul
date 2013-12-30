@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="SICDBWEBNSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="SICDBWEBNSModelStoreContainer">
+          <EntitySet Name="SICNS_T_ASISTENCIA" EntityType="SICDBWEBNSModel.Store.SICNS_T_ASISTENCIA" store:Type="Tables" store:Schema="dbo" store:Name="SICNS_T_ASISTENCIA">
+            <DefiningQuery>SELECT 
+      [SICNS_T_ASISTENCIA].[colab_c_iid] AS [colab_c_iid], 
+      [SICNS_T_ASISTENCIA].[asis_c_dfec_ingreso] AS [asis_c_dfec_ingreso], 
+      [SICNS_T_ASISTENCIA].[asis_c_dfec_salida] AS [asis_c_dfec_salida]
+      FROM [dbo].[SICNS_T_ASISTENCIA] AS [SICNS_T_ASISTENCIA]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="SICNS_T_CONTACTO" EntityType="SICDBWEBNSModel.Store.SICNS_T_CONTACTO" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'SICDBWEBNS_DES.dbo.SICNS_T_ASISTENCIA' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+        <EntityType Name="SICNS_T_ASISTENCIA">
+          <Key>
+            <PropertyRef Name="colab_c_iid" />
+          </Key>
+          <Property Name="colab_c_iid" Type="int" Nullable="false" />
+          <Property Name="asis_c_dfec_ingreso" Type="datetime" />
+          <Property Name="asis_c_dfec_salida" Type="datetime" />
+        </EntityType>
+        <EntityType Name="SICNS_T_CONTACTO">
+          <Key>
+            <PropertyRef Name="contac_c_iid" />
+          </Key>
+          <Property Name="contac_c_iid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="contac_c_vnombres" Type="varchar" Nullable="false" MaxLength="25" />
+          <Property Name="contac_c_vape_pater" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="contac_c_vape_mater" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="contac_c_vcorreo" Type="varchar" Nullable="false" MaxLength="25" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SICDBWEBNSModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="SICDBWEBNSEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="SICNS_T_ASISTENCIA" EntityType="SICDBWEBNSModel.SICNS_T_ASISTENCIA" />
+          <EntitySet Name="SICNS_T_CONTACTO" EntityType="SICDBWEBNSModel.SICNS_T_CONTACTO" />
+        </EntityContainer>
+        <EntityType Name="SICNS_T_ASISTENCIA">
+          <Key>
+            <PropertyRef Name="colab_c_iid" />
+          </Key>
+          <Property Name="colab_c_iid" Type="Int32" Nullable="false" />
+          <Property Name="asis_c_dfec_ingreso" Type="DateTime" />
+          <Property Name="asis_c_dfec_salida" Type="DateTime" />
+        </EntityType>
+        <EntityType Name="SICNS_T_CONTACTO">
+          <Key>
+            <PropertyRef Name="contac_c_iid" />
+          </Key>
+          <Property Type="Int32" Name="contac_c_iid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Type="String" Name="contac_c_vnombres" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="contac_c_vape_pater" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="contac_c_vape_mater" Nullable="false" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="contac_c_vcorreo" Nullable="false" MaxLength="25" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SICDBWEBNSModelStoreContainer" CdmEntityContainer="SICDBWEBNSEntities">
+          <EntitySetMapping Name="SICNS_T_ASISTENCIA"><EntityTypeMapping TypeName="SICDBWEBNSModel.SICNS_T_ASISTENCIA"><MappingFragment StoreEntitySet="SICNS_T_ASISTENCIA">
+            <ScalarProperty Name="colab_c_iid" ColumnName="colab_c_iid" />
+            <ScalarProperty Name="asis_c_dfec_ingreso" ColumnName="asis_c_dfec_ingreso" />
+            <ScalarProperty Name="asis_c_dfec_salida" ColumnName="asis_c_dfec_salida" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="SICNS_T_CONTACTO">
+            <EntityTypeMapping TypeName="SICDBWEBNSModel.SICNS_T_CONTACTO">
+              <MappingFragment StoreEntitySet="SICNS_T_CONTACTO">
+                <ScalarProperty Name="contac_c_vcorreo" ColumnName="contac_c_vcorreo" />
+                <ScalarProperty Name="contac_c_vape_mater" ColumnName="contac_c_vape_mater" />
+                <ScalarProperty Name="contac_c_vape_pater" ColumnName="contac_c_vape_pater" />
+                <ScalarProperty Name="contac_c_vnombres" ColumnName="contac_c_vnombres" />
+                <ScalarProperty Name="contac_c_iid" ColumnName="contac_c_iid" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="SICNSModel">
+        <EntityTypeShape EntityType="SICDBWEBNSModel.SICNS_T_ASISTENCIA" Width="2.25" PointX="0.75" PointY="0.75" Height="1.59568359375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SICDBWEBNSModel.SICNS_T_CONTACTO" Width="1.5" PointX="0.75" PointY="3.75" Height="1.9802864583333335" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SICDBWEBNSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="SICDBWEBNSModelStoreContainer">
+    <EntitySet Name="SICNS_T_ASISTENCIA" EntityType="SICDBWEBNSModel.Store.SICNS_T_ASISTENCIA" store:Type="Tables" store:Schema="dbo" store:Name="SICNS_T_ASISTENCIA">
+      <DefiningQuery>SELECT 
+      [SICNS_T_ASISTENCIA].[colab_c_iid] AS [colab_c_iid], 
+      [SICNS_T_ASISTENCIA].[asis_c_dfec_ingreso] AS [asis_c_dfec_ingreso], 
+      [SICNS_T_ASISTENCIA].[asis_c_dfec_salida] AS [asis_c_dfec_salida]
+      FROM [dbo].[SICNS_T_ASISTENCIA] AS [SICNS_T_ASISTENCIA]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="SICNS_T_CONTACTO" EntityType="SICDBWEBNSModel.Store.SICNS_T_CONTACTO" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <!--Se encontraron errores durante la generación:
+      advertencia 6002: La tabla o vista 'SICDBWEBNS_DES.dbo.SICNS_T_ASISTENCIA' no tiene ninguna clave principal definida. Se ha inferido la clave y la definición se creó como vista o tabla de solo lectura.
+      -->
+  <EntityType Name="SICNS_T_ASISTENCIA">
+    <Key>
+      <PropertyRef Name="colab_c_iid" />
+    </Key>
+    <Property Name="colab_c_iid" Type="int" Nullable="false" />
+    <Property Name="asis_c_dfec_ingreso" Type="datetime" />
+    <Property Name="asis_c_dfec_salida" Type="datetime" />
+  </EntityType>
+  <EntityType Name="SICNS_T_CONTACTO">
+    <Key>
+      <PropertyRef Name="contac_c_iid" />
+    </Key>
+    <Property Name="contac_c_iid" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="contac_c_vnombres" Type="varchar" Nullable="false" MaxLength="25" />
+    <Property Name="contac_c_vape_pater" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="contac_c_vape_mater" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="contac_c_vcorreo" Type="varchar" Nullable="false" MaxLength="25" />
+  </EntityType>
+</Schema>

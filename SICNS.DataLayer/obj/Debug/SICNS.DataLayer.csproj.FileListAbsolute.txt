@@ -1,0 +1,11 @@
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.DataLayer\bin\Debug\SICNS.DataLayer.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.DataLayer\bin\Debug\SICNS.DataLayer.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.DataLayer\bin\Debug\SICNS.DTO.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.DataLayer\bin\Debug\SICNS.EntityLayer.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.DataLayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.DataLayer\bin\Debug\SICNS.DTO.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.DataLayer\bin\Debug\SICNS.EntityLayer.pdb
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.DataLayer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.DataLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.DataLayer\obj\Debug\SICNS.DataLayer.dll
+C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.DataLayer\obj\Debug\SICNS.DataLayer.pdb
