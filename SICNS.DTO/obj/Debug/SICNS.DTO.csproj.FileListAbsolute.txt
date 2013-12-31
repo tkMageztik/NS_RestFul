@@ -5,3 +5,10 @@ C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.DTO\bin\De
 C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.DTO\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.DTO\obj\Debug\SICNS.DTO.dll
 C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.DTO\obj\Debug\SICNS.DTO.pdb
+C:\Users\Juan\NS_RestFul\SICNS.DTO\bin\Debug\SICNS.DTO.dll
+C:\Users\Juan\NS_RestFul\SICNS.DTO\bin\Debug\SICNS.DTO.pdb
+C:\Users\Juan\NS_RestFul\SICNS.DTO\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Juan\NS_RestFul\SICNS.DTO\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Juan\NS_RestFul\SICNS.DTO\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\NS_RestFul\SICNS.DTO\obj\Debug\SICNS.DTO.dll
+C:\Users\Juan\NS_RestFul\SICNS.DTO\obj\Debug\SICNS.DTO.pdb
