@@ -10,3 +10,9 @@ C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.EntityLaye
 C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.EntityLayer\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.EntityLayer\obj\Debug\SICNS.EntityLayer.dll
 C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.EntityLayer\obj\Debug\SICNS.EntityLayer.pdb
+C:\Users\Juan\NS_RestFul\SICNS.EntityLayer\bin\Debug\SICNS.EntityLayer.dll.config
+C:\Users\Juan\NS_RestFul\SICNS.EntityLayer\bin\Debug\SICNS.EntityLayer.dll
+C:\Users\Juan\NS_RestFul\SICNS.EntityLayer\bin\Debug\SICNS.EntityLayer.pdb
+C:\Users\Juan\NS_RestFul\SICNS.EntityLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\NS_RestFul\SICNS.EntityLayer\obj\Debug\SICNS.EntityLayer.dll
+C:\Users\Juan\NS_RestFul\SICNS.EntityLayer\obj\Debug\SICNS.EntityLayer.pdb

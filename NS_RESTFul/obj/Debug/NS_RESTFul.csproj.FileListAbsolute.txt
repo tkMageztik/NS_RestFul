@@ -1,0 +1,15 @@
+C:\Users\Juan\NS_RestFul\NS_RESTFul\bin\NS_RESTFull.dll
+C:\Users\Juan\NS_RestFul\NS_RESTFul\bin\NS_RESTFull.pdb
+C:\Users\Juan\NS_RestFul\NS_RESTFul\bin\Newtonsoft.Json.dll
+C:\Users\Juan\NS_RestFul\NS_RESTFul\bin\SICNS.BusinessLayer.dll
+C:\Users\Juan\NS_RestFul\NS_RESTFul\bin\SICNS.DTO.dll
+C:\Users\Juan\NS_RestFul\NS_RESTFul\bin\SICNS.DataLayer.dll
+C:\Users\Juan\NS_RestFul\NS_RESTFul\bin\SICNS.EntityLayer.dll
+C:\Users\Juan\NS_RestFul\NS_RESTFul\bin\SICNS.BusinessLayer.pdb
+C:\Users\Juan\NS_RestFul\NS_RESTFul\bin\SICNS.DTO.pdb
+C:\Users\Juan\NS_RestFul\NS_RESTFul\bin\Newtonsoft.Json.xml
+C:\Users\Juan\NS_RestFul\NS_RESTFul\bin\SICNS.DataLayer.pdb
+C:\Users\Juan\NS_RestFul\NS_RESTFul\bin\SICNS.EntityLayer.pdb
+C:\Users\Juan\NS_RestFul\NS_RESTFul\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\NS_RestFul\NS_RESTFul\obj\Debug\NS_RESTFull.dll
+C:\Users\Juan\NS_RestFul\NS_RESTFul\obj\Debug\NS_RESTFull.pdb

@@ -21,34 +21,68 @@ namespace NS_RESTFull
     {
         // TODO: Implement the collection resource that will contain the SampleItem instances
 
-        [WebGet(UriTemplate = "Contactos", BodyStyle = WebMessageBodyStyle.Wrapped, ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
-        public string GetContactos()
+        [WebGet(UriTemplate = "ContactosStrJson", BodyStyle = WebMessageBodyStyle.Wrapped, ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        public string GetContactosStrJson()
         {
-            // TODO: Replace the current implementation to return a collection of SampleItem instances
-
             List<ContactoDTO> contactos = new ContactoBL().ListarContacto();
+            return JsonConvert.SerializeObject(contactos);
+        }
 
-            //return JsonConvert.SerializeObject(contacto);
-            //return JsonConvert.SerializeObject(t);
-            return JsonConvert.SerializeObject(contactos, Formatting.Indented);
-
-
-            //return JsonConvert.SerializeObject(objReportBO);
-
-            //JsonSerializer.Create(new JsonSerializerSettings() { ContractResolver= new Contacto() });
-            //return JsonConvert.SerializeObject(t, new JsonSerializerSettings() { ContractResolver = new Contacto() });
-
-            //return JsonConvert.SerializeObject(objReportBO);
-
-            //return contacto;
+        [WebInvoke(UriTemplate = "POST/ContactosStrJson", Method = "POST", BodyStyle = WebMessageBodyStyle.Wrapped,
+            ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        public string PostContactosStrJson()
+        {
+            List<ContactoDTO> contactos = new ContactoBL().ListarContacto();
+            return JsonConvert.SerializeObject(contactos);
         }
 
 
-        //[WebInvoke(UriTemplate = "", Method = "POST")]
-        //public SampleItem Create(SampleItem instance)
+        [WebGet(UriTemplate = "ContactosObjJson", BodyStyle = WebMessageBodyStyle.Wrapped, ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        public List<ContactoDTO> GetContactosObjJson()
+        {
+            List<ContactoDTO> contactos = new ContactoBL().ListarContacto();
+            return contactos;
+        }
+
+        [WebGet(UriTemplate = "ContactosXML", BodyStyle = WebMessageBodyStyle.Wrapped)]
+        public List<ContactoDTO> GetContactosXML()
+        {
+            List<ContactoDTO> contactos = new ContactoBL().ListarContacto();
+            return contactos;
+        }
+
+        [WebInvoke(UriTemplate = "CrearContactoJson", Method = "POST",
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        public string Crear(ContactoDTO contacto)
+        {
+            return JsonConvert.SerializeObject(contacto, Formatting.Indented);
+        }
+
+
+        [WebInvoke(UriTemplate = "TipoCambioJson", Method = "POST",
+            BodyStyle = WebMessageBodyStyle.Wrapped,
+            ResponseFormat = WebMessageFormat.Json, RequestFormat = WebMessageFormat.Json)]
+        public string Crear2(ContactoDTO contacto)
+        {
+            //task = _taskRepository.Post(task);
+
+            //var response = new HttpResponseMessage<Task>(task, HttpStatusCode.Created);
+            //HttpResponse t = new HttpResponse();
+
+
+            //string uri = Url.Route(null, new { id = task.Id });
+            //response.Headers.Location = new Uri(Request.RequestUri, uri);
+
+            //return response;
+
+            return JsonConvert.SerializeObject(contacto, Formatting.Indented);
+        }
+
+        //[WebInvoke(UriTemplate = "NuevoContacto", Method = "POST")]
+        //public ContactoDTO Create2(ContactoDTO contacto)
         //{
-        //     TODO: Add the new instance of SampleItem to the collection
-        //    throw new NotImplementedException();
+        //    return contacto;
         //}
 
         //[WebGet(UriTemplate = "{id}")]

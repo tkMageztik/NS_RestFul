@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Runtime.Serialization;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System.Reflection;
 
 namespace SICNS.DTO
 {
@@ -30,7 +32,58 @@ namespace SICNS.DTO
     [JsonObject("JsonAgendaDTO")]
     public class JsonAgendaDTO
     {
-        [JsonProperty("GetContactosResult")]
-        public string LstContactosDTO { get; set; }
+        [JsonProperty("GetContactosStrJsonResult")]
+        public string LstStrJsonContactosDTO { get; set; }
+
+
+        //Lista genérica de objetos, por defecto el json ya tiene la relación pair name_meber:value (key:value)
+        [JsonProperty("GetContactosObjJsonResult")]
+        public List<Object> LstObjJsonContactosDTO { get; set; }
+
+        //Lista tipada
+        //[JsonProperty("GetContactosObjJsonResult")]
+        public List<ContactoDTO> LstTypJsonContactosDTO
+        {
+            get { return DeLstObjALstContactoDTO(); }
+            //set { LstTypJsonContactosDTO = (List<ContactoDTO>)(Object)this.LstObjJsonContactosDTO; }
+        }
+
+        public List<ContactoDTO> DeLstObjALstContactoDTO()
+        {
+            List<ContactoDTO> LstTypJsonContactosDTO = new List<ContactoDTO>();
+            foreach (Object tmp in this.LstObjJsonContactosDTO)
+            {
+                JObject Jobj = (JObject)tmp;
+
+                ContactoDTO contactoDTO = new ContactoDTO();
+
+                Type MyType = typeof(ContactoDTO);
+                MemberInfo[] MyMemberInfoArray = MyType.GetMembers();
+
+                //MemberInfo m = contactoDTO.ApeMaterno();
+
+                foreach (MemberInfo Mymemberinfo in MyMemberInfoArray.Where(x => x.MemberType == MemberTypes.Property))
+                {
+                    switch (Mymemberinfo.Name)
+                    {
+                        case "ID":
+                            contactoDTO.ID = int.Parse(Jobj[Mymemberinfo.Name].ToString()); break;
+                        case "Nombres":
+                            contactoDTO.Nombres = Jobj[Mymemberinfo.Name].ToString(); break;
+                        case "ApePaterno":
+                            contactoDTO.ApePaterno = Jobj[Mymemberinfo.Name].ToString(); break;
+                        case "ApeMaterno":
+                            contactoDTO.ApeMaterno = Jobj[Mymemberinfo.Name].ToString(); break;
+                        case "Correo":
+                            contactoDTO.Correo = Jobj[Mymemberinfo.Name].ToString(); break;
+                    }
+                }
+
+                LstTypJsonContactosDTO.Add(contactoDTO);
+            }
+            return LstTypJsonContactosDTO;
+        }
     }
+
+
 }

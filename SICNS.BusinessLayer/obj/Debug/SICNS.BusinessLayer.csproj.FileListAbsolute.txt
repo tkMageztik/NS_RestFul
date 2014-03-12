@@ -11,3 +11,16 @@ C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.BusinessLa
 C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.BusinessLayer\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.BusinessLayer\obj\Debug\SICNS.BusinessLayer.dll
 C:\Users\Juan\Documents\Visual Studio 2010\Projects\NS_RESTFull\SICNS.BusinessLayer\obj\Debug\SICNS.BusinessLayer.pdb
+C:\Users\Juan\NS_RestFul\SICNS.BusinessLayer\bin\Debug\SICNS.BusinessLayer.dll
+C:\Users\Juan\NS_RestFul\SICNS.BusinessLayer\bin\Debug\SICNS.BusinessLayer.pdb
+C:\Users\Juan\NS_RestFul\SICNS.BusinessLayer\bin\Debug\SICNS.DataLayer.dll
+C:\Users\Juan\NS_RestFul\SICNS.BusinessLayer\bin\Debug\SICNS.DTO.dll
+C:\Users\Juan\NS_RestFul\SICNS.BusinessLayer\bin\Debug\SICNS.EntityLayer.dll
+C:\Users\Juan\NS_RestFul\SICNS.BusinessLayer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Juan\NS_RestFul\SICNS.BusinessLayer\bin\Debug\SICNS.DataLayer.pdb
+C:\Users\Juan\NS_RestFul\SICNS.BusinessLayer\bin\Debug\SICNS.DTO.pdb
+C:\Users\Juan\NS_RestFul\SICNS.BusinessLayer\bin\Debug\SICNS.EntityLayer.pdb
+C:\Users\Juan\NS_RestFul\SICNS.BusinessLayer\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Juan\NS_RestFul\SICNS.BusinessLayer\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Juan\NS_RestFul\SICNS.BusinessLayer\obj\Debug\SICNS.BusinessLayer.dll
+C:\Users\Juan\NS_RestFul\SICNS.BusinessLayer\obj\Debug\SICNS.BusinessLayer.pdb
